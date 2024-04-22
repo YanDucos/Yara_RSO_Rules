@@ -32,6 +32,7 @@ rule eicar_substring_test {
     condition:
         all of them
 }
+
 rule rule_LockBit_Text {
     strings:
         $a1 = "\\LockBit_Ransomware.hta" wide fullword
