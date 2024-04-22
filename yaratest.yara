@@ -42,6 +42,19 @@ rule rule_LockBit_Text {
         all of them
 }
 
+rule rule_LockBit_Text_Bis {
+    strings:
+        $LockBit_substring = "$.lock"
+condition:
+        all of them
+}
+
+rule rule_LockBit_Text_Tier {
+    strings:
+        $LockBit2_substring = "LockBit_Ransomware.hta"
+condition:
+        all of them
+}
 rule rule_LockBit_Bit {
     strings:
         $a1 = { 3C 8B 4C 18 78 8D 04 19 89 45 F8 3B C3 74 70 33 C9 89 4D F4 39 }
